@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS3 transform初体验之demo5</title>
+<style type="text/css">
+body{background-color:#E9E9E9; color:#333333; font-family:"Lucida handwriting",Arial,Helvetica,sans-serif; font-size:16px; margin:0; padding:0;}
+a,a:hover{color:#333333; text-decoration:none;}
+.box{width:960px; height:450px; margin:60px auto 0; font-size:0.75em; position:relative;}
+.title{position:absolute; padding:15px 40px; font-size:2em; border:1px solid #bbbbbb; background:white; -webkit-box-shadow:4px 4px 3px rgba(50, 50, 50, 0.4); -moz-box-shadow:4px 4px 3px rgba(50, 50, 50, 0.4); box-shadow:4px 4px 3px rgba(50, 50, 50, 0.4); left:330px; top:100px; z-index:2;}
+.pic{display:block; padding:10px 10px 15px; text-align:center; background:white; border:1px solid #bfbfbf; -webkit-box-shadow:2px 2px 3px rgba(135, 139, 144, 0.4); -moz-box-shadow:2px 2px 3px rgba(135, 139, 144, 0.4); box-shadow:2px 2px 3px rgba(135, 139, 144, 0.4); -webkit-transition:all 0.5s ease-in; position:absolute; z-index:1;}
+.pic img{display:block; margin-bottom:10px; border:0;}
+.pic:hover,.pic:focus,.pic:active{border-color:#9a9a9a; -webkit-box-shadow:15px 15px 20px rgba(50, 50, 50, 0.4); -moz-box-shadow:15px 15px 20px rgba(50, 50, 50, 0.4); box-shadow:15px 15px 20px rgba(50, 50, 50, 0.4); -webkit-transform:rotate(0deg) scale(1.05); -moz-transform:rotate(0deg) scale(1.05); transform:rotate(0deg) scale(1.05); z-index:2;}
+.pic1{bottom: 10px; right: 365px; -webkit-transform: rotate(10deg); -moz-transform: rotate(10deg); transform: rotate(10deg);}
+.pic2{top: 50px; right: 20px; -webkit-transform: rotate(-4deg); -moz-transform: rotate(-4deg); transform: rotate(-4deg);}
+.pic3{left: 400px; top: 0; -webkit-transform: rotate(-5deg); -moz-transform: rotate(-5deg); transform: rotate(-5deg);}
+.pic4{top: 10px; left: 495px; -webkit-transform: rotate(-20deg); -moz-transform: rotate(-20deg); transform: rotate(-20deg);}
+.pic5{bottom: 0; right: 0; -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); transform: rotate(1deg);}
+.pic6{bottom: 10px; right: 156px; -webkit-transform: rotate(6deg); -moz-transform: rotate(6deg); transform: rotate(6deg);}
+.pic7{bottom:0; left:400px; -webkit-transform: rotate(-10deg); -moz-transform: rotate(-10deg); transform: rotate(-10deg);}
+.pic8{bottom: -20px; left: 700px; -webkit-transform: rotate(-8deg); -moz-transform: rotate(-8deg); transform: rotate(-8deg);}
+.pic9{bottom: 0; left: 0; -webkit-transform: rotate(-8deg); -moz-transform: rotate(-8deg); transform: rotate(-8deg);}
+.pic10{top: 0; left: 20px; -webkit-transform: rotate(8deg); -moz-transform: rotate(8deg); transform: rotate(8deg);}
+.pic11{top: 0; right: 0; -webkit-transform: rotate(-8deg); -moz-transform: rotate(-8deg); transform: rotate(-8deg);}
+.pic12{top: 0; left: 680px; -webkit-transform: rotate(18deg); -moz-transform: rotate(18deg); transform: rotate(18deg);}
+.pic13{bottom: -20px; right: 630px; -webkit-transform: rotate(4deg); -moz-transform: rotate(4deg); transform: rotate(4deg);}
+.pic14{top: 90px; left: 430px; -webkit-transform: rotate(15deg); -moz-transform: rotate(15deg); transform: rotate(15deg);}
+.pic15{left:176px; top:20px; -webkit-transform: rotate(-8deg); -moz-transform: rotate(-8deg); transform: rotate(-8deg);}
+</style>
+</head>
+
+<body>
+<div class="box">
+	<h1 class="title">CSS3超酷美女图片墙</h1>
+    <div id="box">      
+		<script type="text/javascript">
+            var box = document.getElementById("box");
+            var pics = "";
+            for(var i=1; i<=15; i+=1){
+                var random_width = 100+ 106*Math.random();
+                pics += '<a href="#zhangxinxu" class="pic pic'+i+'"><img style="min-height:75px;" width="'+random_width+'" src="//image.zhangxinxu.com/image/study/s/s256/mm'+i+'.jpg" />美女'+i+'</a>';	
+            }
+            box.innerHTML = pics;
+        </script>
+    </div>
+</div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11205167-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+     ga.type = 'text/javascript';
+     ga.async = true;
+    ga.src = '//www.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<div id="baiduserver"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?48d8e938d5365a4cb0fc9e65d945018e";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script><div align="center">
+    <div id="bdshare" class="bdsharebuttonbox" style="display:inline-block;"><small style="color:#777;margin-top:4px; float: left;">分享到：</small><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a><a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_bdysc" data-cmd="bdysc" title="分享到百度云收藏"></a><a class="bds_count" data-cmd="count">0</a></div></div><script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName("head")[0]||body).appendChild(createElement("script")).src="//cdn.zhangxinxu.com/static/api/js/share.js?v=89860593.js?cdnversion="+~(-new Date()/36e5)];</script></div>
+</body>
+</html>

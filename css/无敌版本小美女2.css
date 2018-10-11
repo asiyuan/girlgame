@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color:#6c6c6c;;
+}
+body {
+	background-color: #E9E9E9;
+	color: #333333;
+	font-family: "Lucida handwriting", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+.box {
+	width: 960px;
+	height: 450px;
+	margin: 60px auto 0;
+	font-size: 0.75em;
+	position: relative;
+	text-align: center;
+}
+
+.box .title {
+	position: absolute;
+	font-size: 2em;
+	border: 1px solid #bbbbbb;
+	padding: 15px 40px;
+	background: white;
+    box-shadow: 4px 4px 3px rgba(50, 50, 50, 0.4);
+	top: 140px;
+	left: 270px;
+	z-index: 2;
+}
+.pic {
+	display: block;
+	padding: 10px 10px 15px;
+	position: absolute;
+	text-align: center;
+	background: #FFFFFF;
+	border: 1px solid #bfbfbf;
+    box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+	transition: all 0.5s ease-in;
+	z-index: 1;
+}
+.pic1 {
+	left: 400px;
+	top: 0;
+	transform: rotate(-15deg);
+}
+.pic2 {
+	transform: rotate(10deg);
+}
+.pic3 {
+	transform: rotate(-18deg);
+	top: 0;
+	left: 150px;
+}
+.pic4 {
+	transform: rotate(18deg);
+	left: 600px;
+	top: 0;
+}
+.pic5 {
+	transform: rotate(15deg);
+	left: 750px;
+	top: 0;
+}
+.pic6 {
+	transform: rotate(-18deg);
+	top: 250px;
+	left: 0;
+}
+.pic7 {
+	transform: rotate(15deg);
+	left: 250px;
+	top: 260px;
+}
+.pic8 {
+	transform: rotate(10deg);
+	left: 100px;
+	top: 250px;
+}
+.pic9 {
+	transform: rotate(-15deg);
+	left: 350px;
+	top: 250px;
+}
+.pic10 {
+	transform: rotate(10deg);
+	left: 550px;
+	top: 250px;
+}
+.pic11 {
+	transform: rotate(-8deg);
+	left: 380px;
+	top: 109px;
+}
+.pic12 {
+	transform: rotate(-15deg);
+	left: 750px;
+	top: 250px;
+}
+.pic:hover {
+    border-color: #9a9a9a;
+	box-shadow: 15px 15px 20px rgba(50, 50, 50, 0.4);
+	transform: rotate(0deg) scale(1.05);
+	z-index: 3;
+}
